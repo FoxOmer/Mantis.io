@@ -18,6 +18,9 @@
 /tmp
 log/*
 
+# Compiled Assets
+/public/assets/*
+
 # ZEUS
 zeus.json
 custom_plan.rb
