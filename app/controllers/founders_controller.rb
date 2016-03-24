@@ -11,7 +11,6 @@ class FoundersController < ApplicationController
 
   private
   def founder_params
-    params.require(:mentor).permit(:name, :profile_pic, :about, :topic)
+    params.require(:founder).permit(:name, :about_me, :mission_state, :company_description, :company_status)
   end
-
 end

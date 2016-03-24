@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   root 'posts#index'
 
   get 'new_user/mentor' => 'mentors#new'
-  get 'new_user/mentor' => 'founders#new'
+  get 'new_user/founder' => 'founders#new'
 
   resources :mentors
+  resources :founders
 end
