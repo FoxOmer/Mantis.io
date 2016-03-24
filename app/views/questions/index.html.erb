@@ -1,41 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Questions</h1>
+<h1>Founders that need assistance</h1>
 
 <table>
   <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Summary</th>
-      <th>Category</th>
-      <th>Asker</th>
-      <th>Mentor</th>
-      <th>Vote</th>
-      <th>Video link</th>
-      <th colspan="3"></th>
-    </tr>
   </thead>
 
   <tbody>
     <% @questions.each do |question| %>
-      <tr>
-        <td><%= question.title %></td>
-        <td><%= question.content %></td>
-        <td><%= question.summary %></td>
-        <td><%= question.category_id %></td>
-        <td><%= question.asker_id %></td>
-        <td><%= question.mentor_id %></td>
-        <td><%= question.vote %></td>
-        <td><%= question.video_link %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <%= render "question_item", locals: question %>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Question', new_question_path %>
