@@ -36,7 +36,9 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Templating
 gem 'slim'
+gem 'haml', '~> 4.0', '>= 4.0.7'
 
 # Simple form
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
@@ -59,9 +61,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
-  # Haml
-  gem 'haml', '~> 4.0', '>= 4.0.7'
 
 end
 
