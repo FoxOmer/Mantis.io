@@ -38,6 +38,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'slim'
 
+# Simple form
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -60,11 +63,6 @@ group :development, :test do
   # Haml
   gem 'haml', '~> 4.0', '>= 4.0.7'
 
-  # Simple form
-  gem 'simple_form', '~> 3.2', '>= 3.2.1'
-
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
 end
 
 ruby "2.1.7"
