@@ -6,7 +6,7 @@ class MentorsController < ApplicationController
 
   def create
     @mentor = Mentor.create!(mentor_params)
-    redirect_to "/feed"
+    redirect_to "/questions"
     # @mentor = params[:mentor]
   end
 
