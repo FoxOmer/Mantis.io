@@ -3,6 +3,7 @@
 # general
 .idea
 .DS_Store
+.ruby-version
 
 # Ignore bundler config.
 /.bundle
@@ -17,9 +18,6 @@
 !/log/.keep
 /tmp
 log/*
-
-# Compiled Assets
-/public/assets/*
 
 # ZEUS
 zeus.json
