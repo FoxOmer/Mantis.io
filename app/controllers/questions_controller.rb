@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = Question.all
+    @questions = formatted_questions
   end
 
   # GET /questions/1
@@ -70,5 +70,21 @@ class QuestionsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
       params.require(:question).permit(:title, :content, :summary, :category_id, :asker_id, :mentor_id, :vote, :video_link)
+    end
+
+    def formatted_questions
+      questions = Question.all
+      questions.map do |q|
+      { 
+        title: q.title, 
+        summary: q.summary, 
+        category: get_category(q.category_id), 
+        video_link: q.video_link
+      }
+      end
+    end
+
+    def get_category(category_id)
+      Category.find(category_id).name
     end
 end

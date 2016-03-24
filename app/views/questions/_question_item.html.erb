@@ -1,0 +1,7 @@
+
+<h2>Subject: <%= locals[:title] %></h2>
+<h3>Category: <%= locals[:category] %></h3>
+<p>Project summary: <%= locals[:summary] %></p>
+<%= youtube_embed(locals[:video_link]).html_safe %>
+
+
