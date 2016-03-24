@@ -1,41 +1,19 @@
+
+
 # general
 .idea
 .DS_Store
-*~
-.sass-cache
 
-#
-node_modlue/
+# Ignore bundler config.
+/.bundle
 
-# package control
-final/node_modules
-final/client/src/vendor
 
-# logs
-final/npm-debug.log
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
 
-# build
-final/build/tmp
-final/build/dist
-
-#test
-final/client/test/screenshots/*
-!final/client/test/screenshots/README.md
-final/client/test/unit-results/*
-!final/client/test/unit-results/README.md
-
-skeleton/node_modules
-skeleton/client/src/vendor
-
-# logs
-skeleton/npm-debug.log
-
-# build
-skeleton/build/tmp
-skeleton/build/dist
-
-#test
-skeleton/client/test/screenshots/*
-!skeleton/client/test/screenshots/README.md
-skeleton/client/test/unit-results/*
-!skeleton/client/test/unit-results/README.md
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+log/
