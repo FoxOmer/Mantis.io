@@ -1,7 +1,16 @@
 
-<h2>Subject: <%= locals[:title] %></h2>
-<h3>Category: <%= locals[:category] %></h3>
-<p>Project summary: <%= locals[:summary] %></p>
-<%= youtube_embed(locals[:video_link]).html_safe %>
+<div class="row">
+    <div class="col-md-7">
+    	<%= youtube_embed(locals[:video_link]).html_safe %>
+    </div>
+	<div class="col-md-5">
+		<h2>Subject: <%= locals[:title] %></h2>
+		<h3>Category: <%= locals[:category] %></h3>
+		<p>Project summary: <%= locals[:summary] %></p>
+		<a class="btn btn-primary" href="#">Assign <span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+</div>
+
+<hr>
 
 
