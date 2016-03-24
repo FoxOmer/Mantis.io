@@ -23,6 +23,14 @@
     <label for="company_status">Company Status. How many employees, investment stage, product status, etc.</label>
     <%= f.text_area :company_status, maxlength: "300", size: "60" %> </br>
   </div>
+  <div class="container">
+    <label for="accelerator">Accelerator attended:</label>
+    <%= f.text_field :accelerator, maxlength: "50" %> </br>
+  </div>
+  <div class="container">
+    <label for="investors">Investors</label>
+    <%= f.text_area :investors, size:"100X60" %> </br>
+  </div>
 
   <%= f.submit "Create" %>
 
