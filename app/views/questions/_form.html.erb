@@ -4,7 +4,7 @@
     <%= f.input :title, class: "form-control" %>
     <%= f.input :content %>
     <%= f.input :summary %>
-    <%= f.input :category_id %>
+    Category: <%= f.select :category_id, options_for_select(['Biz Dev', 'Finance']) %>
     <%= f.input :video_link %>
     <div class="form-actions">
       <%= f.button :submit %>
