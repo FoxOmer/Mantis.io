@@ -9,7 +9,7 @@
 		<p>Project summary: <%= locals[:summary] %></p>
 
 		<a class="btn btn-primary showPopUpButton">
-			Assign
+			Connect
 			<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
 	</div>
@@ -17,12 +17,14 @@
 
 <hr>
 <script>
-var pop = '<div class="container question-assign"><div class="col-md-5"><input type="radio">Now</input><br><input type="radio">Later </input><input type="text" name="At"/><br></div></div>'
+var pop = '<div class="container question-assign"><div class="col-md-5"><form class="form-inline" role="form"><div class="radio">Short message:<input type="text" name="At"/><br>Proposed time:'+ cla +'<button type="submit" value=" Send" class="btn btn-success" id="submit">Send</button></form></div></div>'
 var popUpList = $(pop);
 
 $('.showPopUpButton').click(function() {
     popUpList.dialog();
 });
+
+var cla = '<div class="input-group date" id="datetimepicker2"><input type="text" class="form-control" /><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div>'
 </script>
 
 
