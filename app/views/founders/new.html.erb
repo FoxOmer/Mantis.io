@@ -1,41 +1,15 @@
 <%=simple_form_for @founder do |f| %>
   <%= f.input :name %>
   <%= f.input :profile_pic %>
+  <%= f.input :about_me, label: "About the founders", as: :text, size:"60", maxlength: "100" %>
+  <%= f.input :mission_state, lable: "Mission Statment" %>
+  <%= f.input :company_description, label: "Description", hint: "What are you building?", as: :text,  maxlength: "200", size: "60" %>
+  <%= f.input :company_status, label: "Status", hint: "How many employees, investment stage, product status, etc.", as: :text, maxlength: "300", size: "60" %>
+  <%= f.input :accelerator %>
+  <%= f.input :investors, as: :text %>
+  <div class="form-actions">
+      <%= f.button :submit %>
+  </div>
+  
 <% end %>
-<%= form_for @founder, url: {action: "create"} do |f| %>
-  <div class="container"
-    <label class="name" for="name">Name</label>
-    <%= f.text_field :name, class: "name" %> </br>
-  </div>
-  <div class="container">
-    <label for="profile_pic">Profile Pic</label>
-    <%= f.text_field :profile_pic %>
-  </div>
-  <div class="container">
-    <label for="about_me">About me</label>
-    <%= f.text_area :about_me, size: "60", maxlength: "100" %> </br>
-  </div>
-  <div class="container">
-    <label for="mission_state">Company Mission State (up to 100 chars)</label>
-    <%= f.text_area :mission_state, maxlength: "100", size: "60" %> </br>
-  </div>
-  <div class="container">
-    <label for="company_description">What do the company is building?</label>
-    <%= f.text_area :company_description, maxlength: "200", size: "60" %> </br>
-  </div>
-  <div class="container">
-    <label for="company_status">Company Status. How many employees, investment stage, product status, etc.</label>
-    <%= f.text_area :company_status, maxlength: "300", size: "60" %> </br>
-  </div>
-  <div class="container">
-    <label for="accelerator">Accelerator attended:</label>
-    <%= f.text_field :accelerator, maxlength: "50" %> </br>
-  </div>
-  <div class="container">
-    <label for="investors">Investors</label>
-    <%= f.text_area :investors, size:"100X60" %> </br>
-  </div>
 
-  <%= f.submit "Create" %>
-
-<% end %>
