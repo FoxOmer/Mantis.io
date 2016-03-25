@@ -7,10 +7,22 @@
 		<h2>Subject: <%= locals[:title] %></h2>
 		<h3>Category: <%= locals[:category] %></h3>
 		<p>Project summary: <%= locals[:summary] %></p>
-		<a class="btn btn-primary" href="#">Assign <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+		<a class="btn btn-primary showPopUpButton">
+			Assign
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
 	</div>
 </div>
 
 <hr>
+<script>
+var pop = '<div class="container question-assign"><div class="col-md-5"><input type="radio">Now</input><br><input type="radio">Later </input><input type="text" name="At"/><br></div></div>'
+var popUpList = $(pop);
+
+$('.showPopUpButton').click(function() {
+    popUpList.dialog();
+});
+</script>
 
 
