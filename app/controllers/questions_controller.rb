@@ -79,7 +79,8 @@ class QuestionsController < ApplicationController
         title: q.title, 
         summary: q.summary, 
         category: get_category(q.category_id), 
-        video_link: q.video_link
+        video_link: q.video_link,
+        object: q
       }
       end
     end
