@@ -6,7 +6,7 @@ class FoundersController < ApplicationController
 
   def create
     @founder = Founder.create!(founder_params)
-    redirect_to "/ask_questions"
+    redirect_to "/questions/new"
   end
 
   private

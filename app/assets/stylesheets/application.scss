@@ -15,7 +15,13 @@
  */
 
 @import "bootstrap-sprockets";
+
+@import "bootswatch/flatly/variables";
+
 @import "bootstrap";
+
+@import "bootswatch/flatly/bootswatch";
+
 
 body {
 	font-family: 'Arvo', serif;
@@ -112,3 +118,4 @@ body {
 .question-assign{
 	background-color: white;
 }
+

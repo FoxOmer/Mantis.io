@@ -41,6 +41,7 @@ gem 'slim'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+gem 'bootswatch-rails'
 
 # Simple form
 gem 'simple_form', '~> 3.2', '>= 3.2.1'

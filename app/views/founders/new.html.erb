@@ -1,3 +1,7 @@
+<%=simple_form_for @founder do |f| %>
+  <%= f.input :name %>
+  <%= f.input :profile_pic %>
+<% end %>
 <%= form_for @founder, url: {action: "create"} do |f| %>
   <div class="container"
     <label class="name" for="name">Name</label>
